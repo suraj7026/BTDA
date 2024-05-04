@@ -20,36 +20,39 @@
 - **Dataset:** Kaggle Brain Tumor MRI Dataset
 - **Preprocessing:** 
 
-Data Augmentation:
+- **Data Augmentation:**
 
-- **train_datagen:** ImageDataGenerator is used for data augmentation on the training set. This includes:
+  - `train_datagen`: ImageDataGenerator is used for data augmentation on the training set. This includes:
+    - Rotation
+    - Brightness adjustment
+    - Shifting
+    - Shearing
+    - Horizontal flipping
+  - `test_datagen`: No augmentation is applied to the test set, only rescaling.
 
-**Rotation**
-**Brightness adjustment**
-**Shifting**
-**Shearing**
-**Horizontal flipping**
-**test_datagen: No augmentation is applied to the test set, only rescaling.**
+- **Image Rescaling:**
 
-Image Rescaling:
+    All images are rescaled by dividing pixel values by 255 (normalization to [0, 1] range).
 
-All images are rescaled by dividing pixel values by 255 (normalization to [0, 1] range).
-Directory Structure:
+- **Directory Structure:**
 
-Data is organized with each class in its own subdirectory.
-train_dir: Path to the training images directory.
-test_dir: Path to the testing images directory.
-Generator Application:
+  Data is organized with each class in its own subdirectory.
+    - train_dir: Path to the training images directory.
+    - test_dir: Path to the testing images directory.
 
-flow_from_directory: This method applies the ImageDataGenerator, generating batches of augmented images and labels.
-Class Indices:
+- **Generator Application:**
 
-class_indices_train: Dictionary mapping training set class names to indices.
-class_indices_train_list: List of training set class names.
-Shuffling:
+    `flow_from_directory`: This method applies the ImageDataGenerator, generating batches of augmented images and labels.
 
-Training data is shuffled (default in flow_from_directory).
-Testing data maintains order (shuffle=False).
+- **Class Indices:**
+
+  - `class_indices_train`: Dictionary mapping training set class names to indices.
+  - `class_indices_train_list`: is a list of class names for the training set. This provides a convenient way to access the class names in a list format.
+
+- **Shuffling:**
+
+  - Training data is shuffled (default in flow_from_directory).
+  - Testing data maintains order (shuffle=False).
 
 ### Usage
 
