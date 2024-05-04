@@ -15,7 +15,7 @@
 - **LSTM Layer:** Adds capability to understand context within image data (128 units).
 - **Output Layer:** Dense layer with 'softmax' activation for multi-class tumor prediction.
 
-### Data (Brief)
+### Data 
 
 - **Dataset:** Kaggle Brain Tumor MRI Dataset
 
