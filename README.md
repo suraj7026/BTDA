@@ -18,7 +18,6 @@
 ### Data (Brief)
 
 - **Dataset:** Kaggle Brain Tumor MRI Dataset
-- **Preprocessing:** 
 
 - **Data Augmentation:**
 
@@ -37,8 +36,8 @@
 - **Directory Structure:**
 
   Data is organized with each class in its own subdirectory.
-    - train_dir: Path to the training images directory.
-    - test_dir: Path to the testing images directory.
+    - `train_dir`: Path to the training images directory.
+    - `test_dir`: Path to the testing images directory.
 
 - **Generator Application:**
 
