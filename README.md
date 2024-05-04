@@ -18,18 +18,18 @@
 ### Data (Brief)
 
 - **Dataset:** Kaggle Brain Tumor MRI Dataset
-- **Preprocessing:** Preprocessing
+- **Preprocessing:** 
 
 Data Augmentation:
 
-train_datagen: ImageDataGenerator is used for data augmentation on the training set. This includes:
+- **train_datagen:** ImageDataGenerator is used for data augmentation on the training set. This includes:
 
-Rotation
-Brightness adjustment
-Shifting
-Shearing
-Horizontal flipping
-test_datagen: No augmentation is applied to the test set, only rescaling.
+**Rotation**
+**Brightness adjustment**
+**Shifting**
+**Shearing**
+**Horizontal flipping**
+**test_datagen: No augmentation is applied to the test set, only rescaling.**
 
 Image Rescaling:
 
